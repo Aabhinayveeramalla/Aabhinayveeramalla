@@ -18,6 +18,29 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const accordionItems = document.querySelectorAll(".accordion-item");
+    
+            accordionItems.forEach(item => {
+                const accordionTitle = item.querySelector(".accordion-title");
+    
+                accordionTitle.addEventListener("click", function(event) {
+                    event.preventDefault();
+    
+                    const activeAccordion = document.querySelector(".accordion-title.active");
+    
+                    if (activeAccordion && activeAccordion !== this) {
+                        activeAccordion.classList.remove("active");
+                        activeAccordion.nextElementSibling.classList.remove("show");
+                    }
+    
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                });
+            });
+        });
+    </script>
   </head>
   <body>
     <div class="nav-area">
@@ -37,7 +60,7 @@
               >
                 <ul class="navbar-nav m-auto">
                   <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="#" class="nav-link ">
                       Home
                       <i class="bx bx-chevron-down"></i>
                     </a>
@@ -51,7 +74,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#typesofvac" class="nav-link">
                       types of vaccination
                       <i class="bx bx-chevron-down"></i>
                     </a>
@@ -72,7 +95,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#blog" class="nav-link">
                       Blog
                       <i class="bx bx-chevron-down"></i>
                     </a>
@@ -91,6 +114,7 @@
             </div>
           </nav>
         </div>
+        
         <section class="hero-slider-area">
             <div class="slider-item slider-item-bg-1">
                 <div class="container">
@@ -113,7 +137,7 @@
                         </p>
 
                         <div class="slider-btn">
-                          <a class="default-btn" href="registration.html">
+                          <a class="default-btn" href="#">
                             Apply Now
                           </a>
                         </div>
@@ -165,7 +189,7 @@
             <div class="owl-dots disabled"></div>
           </div> -->
         </section>
-        <section class="services-area ptb-70">
+        <section class="services-area ptb-70" id="typesofvac">
           <div class="container">
             <div class="section-title">
               <span>Our Services</span>
@@ -188,7 +212,7 @@
                     accusantium repudiandae possimus
                   </p>
 
-                  <a href="service-details.html" class="read-more">
+                  <a href="#" class="read-more">
                     Read More
                   </a>
 
@@ -206,15 +230,12 @@
                     accusantium repudiandae possimus
                   </p>
 
-                  <a href="service-details.html" class="read-more">
+                  <a href="" class="read-more">
                     Read More
                   </a>
 
                   <div class="shape">
-                    <img
-                      src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/service-shape.png"
-                      alt="Image"
-                    />
+                     
                   </div>
                 </div>
               </div>
@@ -229,15 +250,12 @@
                     accusantium repudiandae possimus
                   </p>
 
-                  <a href="service-details.html" class="read-more">
+                  <a href="#" class="read-more">
                     Read More
                   </a>
 
                   <div class="shape">
-                    <img
-                      src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/service-shape.png"
-                      alt="Image"
-                    />
+                     
                   </div>
                 </div>
               </div>
@@ -252,15 +270,12 @@
                     accusantium repudiandae possimus
                   </p>
 
-                  <a href="service-details.html" class="read-more">
+                  <a href="#" class="read-more">
                     Read More
                   </a>
 
                   <div class="shape">
-                    <img
-                      src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/service-shape.png"
-                      alt="Image"
-                    />
+                     
                   </div>
                 </div>
               </div>
@@ -275,15 +290,12 @@
                     accusantium repudiandae possimus
                   </p>
 
-                  <a href="service-details.html" class="read-more">
+                  <a href="#" class="read-more">
                     Read More
                   </a>
 
                   <div class="shape">
-                    <img
-                      src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/service-shape.png"
-                      alt="Image"
-                    />
+                     
                   </div>
                 </div>
               </div>
@@ -298,129 +310,181 @@
                     accusantium repudiandae possimus
                   </p>
 
-                  <a href="service-details.html" class="read-more">
+                  <a href="#" class="read-more">
                     Read More
                   </a>
 
                   <div class="shape">
-                    <img
-                      src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/service-shape.png"
-                      alt="Image"
-                    />
+                     
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-fd3578c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-          data-id="fd3578c"
-          data-element_type="section"
-        >
-          <div class="elementor-container elementor-column-gap-no">
-            <div
-              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-92196a6"
-              data-id="92196a6"
-              data-element_type="column"
-            >
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-3102f93 ptb-70 elementor-widget elementor-widget-faq"
-                  data-id="3102f93"
-                  data-element_type="widget"
-                  data-widget_type="faq.default"
-                >
-                  <div class="elementor-widget-container">
-                    <!-- START FAQ AREA -->
-                    <section class="accordion-area">
-                      <div class="container">
-                        <div class="section-title">
-                          <h2>FAQs</h2>
-               
-                        </div>
+        <section class="accordion-area ptb-70">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Frequenty Asked Question</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
 
-                        <div class="row align-items-center">
-                          <div class="col-lg-6">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <a class="accordion-title" href="javascript:void(0)">
-                                            <i class="bx bx-plus"></i>
-                                            What is a vaccine?
-                                          </a>
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body ">
-                                        A vaccine is a biological product that stimulates the immune system to develop immunity against a specific disease without causing the disease itself.                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="faq-accordion">
+                            <ul class="accordion">
+                                <li class="accordion-item">
+                                    <a class="accordion-title active" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        What is a vaccine?   
+                                    </a>
+    
+                                    <div class="accordion-content show">
+                                        <p>A vaccine is a biological product that stimulates the immune system to develop immunity against a specific disease without causing the disease itself.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
                                         Why are vaccines important?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Vaccines are crucial for preventing and controlling the spread of infectious diseases. They help protect individuals and communities by creating immunity against various illnesses.                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Vaccines are crucial for preventing and controlling the spread of infectious diseases. They help protect individuals and communities by creating immunity against various illnesses.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
                                         How do vaccines work?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Vaccines contain weakened or inactivated pathogens or pieces of pathogens. When administered, they prompt the immune system to produce antibodies and memory cells, preparing the body to fight the actual disease in the future.                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                        Are vaccines safe?                                      </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Common side effects include soreness at the injection site, mild fever, and fatigue. These side effects typically resolve within a few days.    
-                                                                    </div>
-                                  </div>
-                                   <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFive">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                        Can vaccines cause severe side effects?                                      </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Severe side effects are rare, but they can occur. The risk of severe side effects is generally much lower than the risk of severe complications from the diseases vaccines prevent                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading6">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
-                                        How long does vaccine immunity last?                                      </button>
-                                    </h2>
-                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        The duration of vaccine-induced immunity varies depending on the vaccine and the disease. Some vaccines provide lifelong protection, while others may require booster shots to maintain immunity.                                    </div>
-                                  </div> 
-                              </div>
-                          </div>
-                         
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Vaccines contain weakened or inactivated pathogens or pieces of pathogens. When administered, they prompt the immune system to produce antibodies and memory cells, preparing the body to fight the actual disease in the future.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        Are vaccines safe?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Vaccines undergo rigorous testing in clinical trials to ensure their safety and effectiveness. The benefits of vaccination usually far outweigh the risks of potential side effects.</p>
+                                    </div>
+                                    <li class="accordion-item">
+                                        <a class="accordion-title" href="javascript:void(0)">
+                                            <i class="bx bx-chevron-down"></i>
+                                            What are common vaccine side effects?
+                                        </a>
+        
+                                        <div class="accordion-content">
+                                            <p>Common side effects include soreness at the injection site, mild fever, and fatigue. These side effects typically resolve within a few days.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a class="accordion-title" href="javascript:void(0)">
+                                            <i class="bx bx-chevron-down"></i>
+                                            Can vaccines cause severe side effects?
+                                        </a>
+        
+                                        <div class="accordion-content">
+                                            <p>Severe side effects are rare, but they can occur. The risk of severe side effects is generally much lower than the risk of severe complications from the diseases vaccines prevent.</p>
+                                        </div>
+                                    </li>
+                                </li>
+                            </ul>
                         </div>
-                      </div>
-                    </section>
-                    <!-- END FAQ AREA -->
-                  </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="faq-accordion">
+                            <ul class="accordion">
+                                <li class="accordion-item">
+                                    <a class="accordion-title active" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        How long does vaccine immunity last? 
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>The duration of vaccine-induced immunity varies depending on the vaccine and the disease. Some vaccines provide lifelong protection, while others may require booster shots to maintain immunity.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        What are booster shots?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Booster shots are additional doses of a vaccine given after the initial vaccination to reinforce and extend the protection against a specific disease.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        Can I get vaccinated if I'm pregnant?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Some vaccines are safe during pregnancy and can protect both the mother and the baby. However, it's essential to consult with a healthcare provider to determine which vaccines are suitable during pregnancy.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        Can vaccines be given to children?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Yes, vaccines are an essential part of a child's healthcare. Vaccination schedules are designed to provide protection from various diseases starting in infancy.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        What is herd immunity?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Herd immunity is when a significant portion of a population is immune to a disease, making it unlikely to spread. This indirectly protects those who are not immune, such as individuals who cannot receive vaccines due to medical reasons.</p>
+                                    </div>
+                                </li>
+
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        Can I travel after vaccination?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Depending on the destination, some countries or regions may require specific vaccinations for entry. Being vaccinated can also reduce the risk of contracting and spreading diseases while traveling.</p>
+                                    </div>
+                                </li>
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)">
+                                        <i class="bx bx-chevron-down"></i>
+                                        Are vaccines effective against new variants of diseases?
+                                    </a>
+    
+                                    <div class="accordion-content">
+                                        <p>Vaccine effectiveness against new variants may vary, but many vaccines continue to offer protection against severe illness and hospitalization, even with emerging variants.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </section>
-        <section class="blog-area animated fadeInLeft ptb-70">
+        <section class="blog-area animated fadeInLeft ptb-70" id="blog">
           <div class="container">
             <div class="section-title">
               <span>Blog</span>
@@ -435,9 +499,9 @@
               <div class="blog-col col-lg-4 col-md-6">
                 <div class="single-blog">
                   <div class="image">
-                    <a href="blog-details-right-sidebar.html">
+                    <a href="#">
                       <img
-                        src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/blog-1.jpg"
+                        src="https://img.freepik.com/free-photo/scientist-coverall-suit-with-coronavirus-sample-chinese-flag_1157-31363.jpg?w=740&t=st=1707477356~exp=1707477956~hmac=9c87cca7734d1158cb2e4cc92bbcc6ff592ce0004e635e5f8598c3e9416a6209"
                         alt=""
                       />
                       <div
@@ -466,7 +530,7 @@
                     </ul>
 
                     <h3 class="title">
-                      <a href="blog-details-right-sidebar.html"
+                      <a href="#"
                         >What is China's Covid plan for the Olympics?</a
                       >
                     </h3>
@@ -478,7 +542,7 @@
                     </p>
 
                     <div class="read-more">
-                      <a href="blog-details-right-sidebar.html">
+                      <a href="#">
                         <span>Read More</span>
                       </a>
                     </div>
@@ -491,7 +555,7 @@
                   <div class="image">
                     <a href="#">
                       <img
-                        src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/blog-2.jpg"
+                        src="https://img.freepik.com/free-photo/female-entrepreneur-with-face-mask-using-laptop-while-working-office_637285-10837.jpg?w=740&t=st=1707477429~exp=1707478029~hmac=8bee6498fe03894fd584c87d8a2dfa9dbfd5b572c0ecd66b53cdd5a12ad460c8"
                         alt=""
                       />
                       <div
@@ -557,7 +621,7 @@
                     </a>
                   </div>
 
-                  <div class="blog-content">
+                  <div class="blog-content`">
                     <ul>
                       <li>
                         <a href="#">
@@ -628,7 +692,7 @@
                     </ul>
 
                     <h3 class="title">
-                      <a href="blog-details-right-sidebar.html"
+                      <a href="#"
                         >How do I book my Covid jab and does it work?</a
                       >
                     </h3>
@@ -640,7 +704,7 @@
                     </p>
 
                     <div class="read-more">
-                      <a href="blog-details-right-sidebar.html">
+                      <a href="#">
                         <span>Read More</span>
                       </a>
                     </div>
@@ -705,7 +769,7 @@
               <div class="blog-col col-lg-4 col-md-6">
                 <div class="single-blog">
                   <div class="image">
-                    <a href="blog-details-right-sidebar.html">
+                    <a href="#">
                       <img
                         src="https://img.freepik.com/premium-photo/schoolgirl-protective-mask-with-backpack-textbook_217236-8482.jpg?w=740"
                         alt=""
@@ -736,7 +800,7 @@
                     </ul>
 
                     <h3 class="title">
-                      <a href="blog-details-right-sidebar.html"
+                      <a href="#"
                         >How is Covid being managed in UK schools?</a
                       >
                     </h3>
@@ -748,7 +812,7 @@
                     </p>
 
                     <div class="read-more">
-                      <a href="blog-details-right-sidebar.html">
+                      <a href="#">
                         <span>Read More</span>
                       </a>
                     </div>
@@ -758,15 +822,7 @@
             </div>
           </div>
         </section>
-        <!-- Menu For Mobile Device -->
-        <!-- <div class="mobile-nav">
-          <a href="index.html" class="logo">
-            <img
-              src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/logo.png"
-              alt="Logo"
-            />
-          </a>
-        </div> -->
+     
       </div>
     </div>
   </body>
