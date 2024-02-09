@@ -4324,7 +4324,7 @@ div#calendar button.fc-today-button.fc-button.fc-button-primary {
 
 .single-services {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a157e7), to(#1f54f3));
-  background-image: linear-gradient(#a157e7, #1f54f3);
+  background-image: linear-gradient(#a466dd, #11349e);
   padding: 30px;
   position: relative;
   z-index: 1;
