@@ -1,914 +1,700 @@
-<!DOCTYPE html>
+<!-- /*
+* Template Name: Landing
+* Template Author: Untree.co
+* Author URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script>
-          var A = false; // Initialize A with false to indicate the menu is closed
 
-function toggleMenu(e) {
-    e.preventDefault();
-    var M = jQuery('.mean-nav'); // Define M as the jQuery object representing the navigation element
-    var i = '16px';
-    if (A === false) {
-        M.css("text-align", "center");
-        M.css("text-indent", "0");
-        M.css("font-size", i);
-        jQuery(".mean-nav ul:first").slideDown();
-        A = true;
-    } else {g
-        jQuernuBHy(".mean-nav ul:first").slideUp();
-        A = false;
-    }
-    M.toggleClass("meanclose");
-
-    jQuery('p').addClass("mean-remove");
-}
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var menuToggler = document.querySelector('.meanmenu-reveal');
-        if (menuToggler) {
-            menuToggler.addEventListener('click', toggleMenu);
-        }
-    });
-
-    </script>
-   <!-- <script src="sc.js"></script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            const accordionItems = document.querySelectorAll(".accordion-item");
-    
-            accordionItems.forEach(item => {
-                const accordionTitle = item.querySelector(".accordion-title");
-    
-                accordionTitle.addEventListener("click", function(event) {
-                    event.preventDefault();
-    
-                    const activeAccordion = document.querySelector(".accordion-title.active");
-    
-                    if (activeAccordion && activeAccordion !== this) {
-                        activeAccordion.classList.remove("active");
-                        activeAccordion.nextElementSibling.classList.remove("show");
-                    }
-    
-                    this.classList.toggle("active");
-                    this.nextElementSibling.classList.toggle("show");
-                });
-            });
-        });
-    </script>
-  </head>
-  <body>
-    <header class="hearder-area">
-        <div class="nav-area">
-            <div class="navbar-area">
-              <div class="main-nav">
-                <nav class="navbar navbar-expand-md">
-                  <div class="container">
-                          <a class="navbar-brand" href="index.html">
-                              <img
-                              src="image.jpg"
-                              alt="Logo" width="160px"
-                              />
-                          </a>
-                    <div
-                      class="collapse navbar-collapse mean-menu"
-                      style="display: block"
-                    >
-                      <ul class="navbar-nav m-auto">
-                        <li class="nav-item">
-                          <a href="#" class="nav-link ">
-                            Home1111111 aaa
-                            <i class="bx bx-chevron-down"></i>
-                          </a>
-                        </li>
-      
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">
-                            About Us
-                            <i class="bx bx-chevron-down"></i>
-                          </a>
-                        </li>
-      
-                        <li class="nav-item">
-                          <a href="#typesofvac" class="nav-link">
-                            types of vaccination
-                            <i class="bx bx-chevron-down"></i>
-                          </a>
-                        </li>
-      
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">
-                            Shop
-                            <i class="bx bx-chevron-down"></i>
-                          </a>
-                        </li>
-      
-                        <li class="nav-item">
-                          <a href="#" class="nav-link">
-                            Pages
-                            <i class="bx bx-chevron-down"></i>
-                          </a>
-                        </li>
-      
-                        <li class="nav-item">
-                          <a href="#blog" class="nav-link">
-                            Blog
-                            <i class="bx bx-chevron-down"></i>
-                          </a>
-                        </li>
-                      </ul>
-      
-                   
-                      <div class="others-option">
-                        <div class="get-quote">
-                          <a href="#" class="default-btn">
-                              Book your Vaccination                    </a>
-                        </div>
-                      </div>
-                 
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <div class="mobile-nav mean-container"><div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="background:U?;color:;right:0;left:auto;"><span><span><span></span></span></span></a><nav class="mean-nav">
-                <div
-                class="collapse navbar-collapse mean-menu"
-                style="display: block"
-              >
-                <ul class="navbar-nav m-auto" style="display: none;">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">
-                      Home
-                      <i class="bx bx-chevron-down"></i>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      About Us
-                      <i class="bx bx-chevron-down"></i>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#typesofvac" class="nav-link">
-                      types of vaccination
-                      <i class="bx bx-chevron-down"></i>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      Shop
-                      <i class="bx bx-chevron-down"></i>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      Pages
-                      <i class="bx bx-chevron-down"></i>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a href="#blog" class="nav-link">
-                      Blog
-                      <i class="bx bx-chevron-down"></i>
-                    </a>
-                  </li>
-                </ul>
-
-             
-                <div class="others-option">
-                  <div class="get-quote">
-                    <a href="#" class="default-btn">
-                        Book your Vaccination                    </a>
-                  </div>
-                </div>
-           
-              </div>
-<!-- <a class="mean-expand" href="#" style="font-size: 18px">+</a></li> -->
-</ul>
-                                                <!-- Start Other Option -->
-                    <div class="others-option">
-                        <div class="get-quote">
-                            <a href="https://covid-plus.mhrtheme.com/registration/" class="default-btn menu-btn-style">
-                                Apply for Vaccine	                                    </a>
-                        </div>
-                    </div>
-                    <!-- End Other Option -->
-                                        </nav></div>
-                        <div class="logo">
-            <a href="https://covid-plus.mhrtheme.com/"><img src="https://covid-plus.mhrtheme.com/wp-content/uploads/2022/03/logo.png" alt="Image"></a>
-        </div>
-                    </div>
-           </div>
-          </div>
-        
-    </header>
- 
-        
-        <section class="hero-slider-area">
-            <div class="slider-item slider-item-bg-1">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                      <div class="slider-text one">
-                        <span class="top-title"
-                          >Welcome to Continental Vaccination Center</span
-                        >
-                        <h1>It is the best time to get vaccinated</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Nihil architecto laborum eaque! Deserunt
-                          maxime, minus quas molestiae reiciendis. Nihil
-                          architecto laborum eaque, Deserunt maxime minus
-                          quas. Ut enim ad minim veniam, quis nostrud
-                          exercitation ullamco laboris nisi consectetur
-                          adipiscing elit incididunt labore dolore magna
-                          architecto laborum.
-                        </p>
-
-                        <div class="slider-btn">
-                          <a class="default-btn" href="#">
-                            Apply Now
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                      <div
-                        class="banner-wrapper-image wow fadeInUp"
-                        data-wow-delay=".9s"
-                        style="
-                          visibility: visible;
-                          animation-delay: 0.9s;
-                          animation-name: fadeInUp;
-                        "
-                      >
-                        <img
-                          src="https://img.freepik.com/free-vector/organic-flat-vaccination-campaign-illustration_23-2148955324.jpg?w=740&t=st=1707478113~exp=1707478713~hmac=67886781156569119863ba8df29eae921d33a6de890879af01ada89e60c12714"
-                          alt="image"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        
-        </section>
-        <section class="services-area ptb-70" id="typesofvac">
-          <div class="container">
-            <div class="section-title">
-              <span>Our Services</span>
-              <h2>Our Types of Vaccination for Coronavirus</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt dolore magna aliqua. Quis ipsum
-                suspendisse ultrices gravida.
-              </p>
-            </div>
-
-            <div class="row">
-              <div class="service-col col-lg-4 col-sm-6">
-                <div class="single-services">
-                  <i class="flaticon-pie-cart"></i>
-                  <h3>Covid Testing Lab</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                    voluptas laboriosam dicta expedita quos eum veniam,
-                    accusantium repudiandae possimus
-                  </p>
-
-                  <a href="#" class="read-more">
-                    Read More
-                  </a>
-
-               
-                </div>
-              </div>
-
-              <div class="service-col col-lg-4 col-sm-6">
-                <div class="single-services">
-                  <i class="flaticon-press-conference"></i>
-                  <h3>Covid Vaccination</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                    voluptas laboriosam dicta expedita quos eum veniam,
-                    accusantium repudiandae possimus
-                  </p>
-
-                  <a href="" class="read-more">
-                    Read More
-                  </a>
-
-                  <div class="shape">
-                     
-                  </div>
-                </div>
-              </div>
-
-              <div class="service-col col-lg-4 col-sm-6">
-                <div class="single-services">
-                  <i class="flaticon-stage"></i>
-                  <h3>Covid News</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                    voluptas laboriosam dicta expedita quos eum veniam,
-                    accusantium repudiandae possimus
-                  </p>
-
-                  <a href="#" class="read-more">
-                    Read More
-                  </a>
-
-                  <div class="shape">
-                     
-                  </div>
-                </div>
-              </div>
-
-              <div class="service-col col-lg-4 col-sm-6">
-                <div class="single-services">
-                  <i class="flaticon-optimization"></i>
-                  <h3>Covid Product</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                    voluptas laboriosam dicta expedita quos eum veniam,
-                    accusantium repudiandae possimus
-                  </p>
-
-                  <a href="#" class="read-more">
-                    Read More
-                  </a>
-
-                  <div class="shape">
-                     
-                  </div>
-                </div>
-              </div>
-
-              <div class="service-col col-lg-4 col-sm-6">
-                <div class="single-services">
-                  <i class="flaticon-email-1"></i>
-                  <h3>Booking for Covid Test</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                    voluptas laboriosam dicta expedita quos eum veniam,
-                    accusantium repudiandae possimus
-                  </p>
-
-                  <a href="#" class="read-more">
-                    Read More
-                  </a>
-
-                  <div class="shape">
-                     
-                  </div>
-                </div>
-              </div>
-
-              <div class="service-col col-lg-4 col-sm-6">
-                <div class="single-services">
-                  <i class="flaticon-data-analytics"></i>
-                  <h3>Registration for Vaccine</h3>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                    voluptas laboriosam dicta expedita quos eum veniam,
-                    accusantium repudiandae possimus
-                  </p>
-
-                  <a href="#" class="read-more">
-                    Read More
-                  </a>
-
-                  <div class="shape">
-                     
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="accordion-area ptb-70">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Frequenty Asked Question</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="faq-accordion">
-                            <ul class="accordion">
-                                <li class="accordion-item">
-                                    <a class="accordion-title active" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        What is a vaccine?   
-                                    </a>
-    
-                                    <div class="accordion-content show">
-                                        <p>A vaccine is a biological product that stimulates the immune system to develop immunity against a specific disease without causing the disease itself.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        Why are vaccines important?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Vaccines are crucial for preventing and controlling the spread of infectious diseases. They help protect individuals and communities by creating immunity against various illnesses.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        How do vaccines work?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Vaccines contain weakened or inactivated pathogens or pieces of pathogens. When administered, they prompt the immune system to produce antibodies and memory cells, preparing the body to fight the actual disease in the future.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        Are vaccines safe?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Vaccines undergo rigorous testing in clinical trials to ensure their safety and effectiveness. The benefits of vaccination usually far outweigh the risks of potential side effects.</p>
-                                    </div>
-                                    <li class="accordion-item">
-                                        <a class="accordion-title" href="javascript:void(0)">
-                                            <i class="bx bx-chevron-down"></i>
-                                            What are common vaccine side effects?
-                                        </a>
-        
-                                        <div class="accordion-content">
-                                            <p>Common side effects include soreness at the injection site, mild fever, and fatigue. These side effects typically resolve within a few days.</p>
-                                        </div>
-                                    </li>
-                                    <li class="accordion-item">
-                                        <a class="accordion-title" href="javascript:void(0)">
-                                            <i class="bx bx-chevron-down"></i>
-                                            Can vaccines cause severe side effects?
-                                        </a>
-        
-                                        <div class="accordion-content">
-                                            <p>Severe side effects are rare, but they can occur. The risk of severe side effects is generally much lower than the risk of severe complications from the diseases vaccines prevent.</p>
-                                        </div>
-                                    </li>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-6">
-                        <div class="faq-accordion">
-                            <ul class="accordion">
-                                <li class="accordion-item">
-                                    <a class="accordion-title active" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        How long does vaccine immunity last? 
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>The duration of vaccine-induced immunity varies depending on the vaccine and the disease. Some vaccines provide lifelong protection, while others may require booster shots to maintain immunity.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        What are booster shots?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Booster shots are additional doses of a vaccine given after the initial vaccination to reinforce and extend the protection against a specific disease.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        Can I get vaccinated if I'm pregnant?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Some vaccines are safe during pregnancy and can protect both the mother and the baby. However, it's essential to consult with a healthcare provider to determine which vaccines are suitable during pregnancy.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        Can vaccines be given to children?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Yes, vaccines are an essential part of a child's healthcare. Vaccination schedules are designed to provide protection from various diseases starting in infancy.</p>
-                                    </div>
-                                </li>
-                                
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        What is herd immunity?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Herd immunity is when a significant portion of a population is immune to a disease, making it unlikely to spread. This indirectly protects those who are not immune, such as individuals who cannot receive vaccines due to medical reasons.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        Can I travel after vaccination?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Depending on the destination, some countries or regions may require specific vaccinations for entry. Being vaccinated can also reduce the risk of contracting and spreading diseases while traveling.</p>
-                                    </div>
-                                </li>
-                                <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)">
-                                        <i class="bx bx-chevron-down"></i>
-                                        Are vaccines effective against new variants of diseases?
-                                    </a>
-    
-                                    <div class="accordion-content">
-                                        <p>Vaccine effectiveness against new variants may vary, but many vaccines continue to offer protection against severe illness and hospitalization, even with emerging variants.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="blog-area animated fadeInLeft ptb-70" id="blog">
-          <div class="container">
-            <div class="section-title">
-              <span>Blog</span>
-              <h2>Our Blog About Coronavirus</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incidiunt labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida.
-              </p>
-            </div>
-            <div class="row">
-              <div class="blog-col col-lg-4 col-md-6">
-                <div class="single-blog">
-                  <div class="image">
-                    <a href="#">
-                      <img
-                        src="https://img.freepik.com/free-photo/scientist-coverall-suit-with-coronavirus-sample-chinese-flag_1157-31363.jpg?w=740&t=st=1707477356~exp=1707477956~hmac=9c87cca7734d1158cb2e4cc92bbcc6ff592ce0004e635e5f8598c3e9416a6209"
-                        alt=""
-                      />
-                      <div
-                        class="main-img"
-                        style="
-                          background-image: url(https://img.freepik.com/free-photo/scientist-coverall-suit-with-coronavirus-sample-chinese-flag_1157-31363.jpg?w=740&t=st=1707477356~exp=1707477956~hmac=9c87cca7734d1158cb2e4cc92bbcc6ff592ce0004e635e5f8598c3e9416a6209);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-
-                  <div class="blog-content">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-user"></i>
-                          By Adam Smith
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-time"></i>
-                          05 March 2022
-                        </a>
-                      </li>
-                    </ul>
-
-                    <h3 class="title">
-                      <a href="#"
-                        >What is China's Covid plan for the Olympics?</a
-                      >
-                    </h3>
-
-                    <p>
-                      Lorem Ipsum is simply dummy text of teh printing and
-                      typesetting industry. Lorem Ipsum TEMPhas been teh
-                      industry's
-                    </p>
-
-                    <div class="read-more">
-                      <a href="#">
-                        <span>Read More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="blog-col col-lg-4 col-md-6">
-                <div class="single-blog">
-                  <div class="image">
-                    <a href="#">
-                      <img
-                        src="https://img.freepik.com/free-photo/female-entrepreneur-with-face-mask-using-laptop-while-working-office_637285-10837.jpg?w=740&t=st=1707477429~exp=1707478029~hmac=8bee6498fe03894fd584c87d8a2dfa9dbfd5b572c0ecd66b53cdd5a12ad460c8"
-                        alt=""
-                      />
-                      <div
-                        class="main-img"
-                        style="
-                          background-image: url(https://img.freepik.com/free-photo/female-entrepreneur-with-face-mask-using-laptop-while-working-office_637285-10837.jpg?w=740&t=st=1707477429~exp=1707478029~hmac=8bee6498fe03894fd584c87d8a2dfa9dbfd5b572c0ecd66b53cdd5a12ad460c8);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-
-                  <div class="blog-content">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-user"></i>
-                          By Adam Smith
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-time"></i>
-                          05 March 2022
-                        </a>
-                      </li>
-                    </ul>
-
-                    <h3 class="title">
-                      <a href="#"
-                        >My shame over long Covid 18-month work absence</a
-                      >
-                    </h3>
-
-                    <p>
-                      Lorem Ipsum is simply dummy text of teh printing and
-                      typesetting industry. Lorem Ipsum TEMPhas been teh
-                      industry's
-                    </p>
-
-                    <div class="read-more">
-                      <a href="#">
-                        <span>Read More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blog-col col-lg-4 col-md-6">
-                <div class="single-blog">
-                  <div class="image">
-                    <a href="#">
-                      <img
-                        src="https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=740&t=st=1707477517~exp=1707478117~hmac=29ce0d05803a7735e342f6324869640ca89513dc8ccb0988644f0fb41b922a47"
-                        alt=""
-                      />
-                      <div
-                        class="main-img"
-                        style="
-                          background-image: url(https://img.freepik.com/free-photo/young-female-patient-visiting-dentist-office_496169-930.jpg?w=740&t=st=1707477517~exp=1707478117~hmac=29ce0d05803a7735e342f6324869640ca89513dc8ccb0988644f0fb41b922a47);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-
-                  <div class="blog-content">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-user"></i>
-                          By Adam Smith
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-time"></i>
-                          05 March 2022
-                        </a>
-                      </li>
-                    </ul>
-
-                    <h3 class="title">
-                      <a href="#"
-                        >MDental group secures £25m invest for expansion</a
-                      >
-                    </h3>
-
-                    <p>
-                      Lorem Ipsum is simply dummy text of teh printing and
-                      typesetting industry. Lorem Ipsum TEMPhas been teh
-                      industry's
-                    </p>
-
-                    <div class="read-more">
-                      <a href="#">
-                        <span>Read More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-
-              <div class="blog-col col-lg-4 col-md-6">
-                <div class="single-blog">
-                  <div class="image">
-                    <a href="#">
-                      <img
-                        src="https://img.freepik.com/free-photo/side-view-teacher-with-mask_23-2148665886.jpg?w=740&t=st=1707477625~exp=1707478225~hmac=81f8d58f4471deb329d23204b92a6dbebc9a5fc39673d52271bec32dbfdd31d2"
-                        alt=""
-                      />
-                      <div
-                        class="main-img"
-                        style="
-                          background-image: url(https://img.freepik.com/free-photo/side-view-teacher-with-mask_23-2148665886.jpg?w=740&t=st=1707477625~exp=1707478225~hmac=81f8d58f4471deb329d23204b92a6dbebc9a5fc39673d52271bec32dbfdd31d2);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-
-                  <div class="blog-content">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-user"></i>
-                          By Adam Smith
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-time"></i>
-                          05 March 2022
-                        </a>
-                      </li>
-                    </ul>
-
-                    <h3 class="title">
-                      <a href="#"
-                        >How do I book my Covid jab and does it work?</a
-                      >
-                    </h3>
-
-                    <p>
-                      Lorem Ipsum is simply dummy text of teh printing and
-                      typesetting industry. Lorem Ipsum TEMPhas been teh
-                      industry's
-                    </p>
-
-                    <div class="read-more">
-                      <a href="#">
-                        <span>Read More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="blog-col col-lg-4 col-md-6">
-                <div class="single-blog">
-                  <div class="image">
-                    <a href="#">
-                      <img
-                        src="https://img.freepik.com/free-photo/portrait-engine-train-driver-standing-by-locomotive-train-station-holding-departure-schedule_342744-785.jpg?w=740&t=st=1707477940~exp=1707478540~hmac=aab7e2f4816bce293d3d5d926ac2f68f42030e7dad9815f45311b8fd76493ce8"
-                        alt=""
-                      />
-                      <div
-                        class="main-img"
-                        style="
-                          background-image: url(https://img.freepik.com/free-photo/portrait-engine-train-driver-standing-by-locomotive-train-station-holding-departure-schedule_342744-785.jpg?w=740&t=st=1707477940~exp=1707478540~hmac=aab7e2f4816bce293d3d5d926ac2f68f42030e7dad9815f45311b8fd76493ce8);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-
-                  <div class="blog-content">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-user"></i>
-                          By Adam Smith
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-time"></i>
-                          05 March 2022
-                        </a>
-                      </li>
-                    </ul>
-
-                    <h3 class="title">
-                      <a href="#"
-                        >Peak rail service 'won't return to pre-Covid level'</a
-                      >
-                    </h3>
-
-                    <p>
-                      Lorem Ipsum is simply dummy text of teh printing and
-                      typesetting industry. Lorem Ipsum TEMPhas been teh
-                      industry's
-                    </p>
-
-                    <div class="read-more">
-                      <a href="#">
-                        <span>Read More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="blog-col col-lg-4 col-md-6">
-                <div class="single-blog">
-                  <div class="image">
-                    <a href="#">
-                      <img
-                        src="https://img.freepik.com/premium-photo/schoolgirl-protective-mask-with-backpack-textbook_217236-8482.jpg?w=740"
-                        alt=""
-                      />
-                      <div
-                        class="main-img"
-                        style="
-                          background-image: url(https://img.freepik.com/premium-photo/schoolgirl-protective-mask-with-backpack-textbook_217236-8482.jpg?w=740);
-                        "
-                      ></div>
-                    </a>
-                  </div>
-
-                  <div class="blog-content">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-user"></i>
-                          By Adam Smith
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="bx bx-time"></i>
-                          05 March 2022
-                        </a>
-                      </li>
-                    </ul>
-
-                    <h3 class="title">
-                      <a href="#"
-                        >How is Covid being managed in UK schools?</a
-                      >
-                    </h3>
-
-                    <p>
-                      Lorem Ipsum is simply dummy text of teh printing and
-                      typesetting industry. Lorem Ipsum TEMPhas been teh
-                      industry's
-                    </p>
-
-                    <div class="read-more">
-                      <a href="#">
-                        <span>Read More</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-     
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Abhindhu</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
       </div>
     </div>
-  </body>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+
+  
+  <nav class="site-nav dark js-site-navbar mb-5 site-navbar-target">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0 float-left">Abhindhu<span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-left">
+          <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
+          <li class="has-children">
+            <a href="#" class="nav-link">Courses</a>
+            <ul class="dropdown">
+              <li><a href="#testimonials-section" class="nav-link">Front End</a></li>
+              <li><a href="elements.html" class="nav-link">Back End</a></li>
+              <li class="has-children">
+                <a href="#">Full Stack</a>
+                <ul class="dropdown">
+                  <li><a href="#" class="nav-link">MERN stack</a></li>
+                  <li><a href="#" class="nav-link">Node js express js database</a></li>
+                  <li><a href="#" class="nav-link">HTMl Css React js</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="nav-link">Database</a></li>
+            </ul>
+          </li>
+          <li><a href="#features-section" class="nav-link">Features</a></li>
+          <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+          <li><a href="#about-section" class="nav-link">About</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+
+        <ul class="js-clone-nav d-none mt-1 d-lg-inline-block site-menu float-right">
+          <li class="cta-button-outline"><a href="signin.html">Sign in</a></li>
+          <li class="cta-primary"><a href="register.html">Register</a></li>
+        </ul>
+
+
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block dark d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="untree_co-hero pb-0" id="home-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="dots"></div>
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-center mb-5">
+              <h1 class="heading" data-aos="fade-up" data-aos-delay="0">
+              An E-platform to tranform your Carrier With Software skills
+              </h1>
+            </div>
+            
+          </div>
+          
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="intro">
+                <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
+                  <span class="caption">Welcome to Abhindhu</span>
+                  <h2 class="font-weight-bold">Our Mission</h2>
+                  <p> Our mission is dedicated to equipping individuals with cutting-edge skills and expertise in web development, delivering exceptional training and career support to empower our students to thrive in the dynamic field of web development.</p>
+                </div>
+                <p data-aos="fade-up" data-aos-delay="200">
+                  <a href="#features-section" class="btn btn-primary smoothscroll mr-1">See Features</a>
+                  <a href="#pricing-section" class="btn btn-outline-primary smoothscroll">Pricing</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="illustration">
+                <img src="images/graphs-statistics_outline.svg" alt="Image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    <!-- <div class="illustration">
+      
+    </div> -->
+  </div> <!-- /.untree_co-hero -->
+
+  <div class="untree_co-section">
+    <div class="container">
+
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+          <span class="caption">Features</span>
+          <h2 class="heading">Advantage of using our products</h2>
+          <p>
+            "Unlock Your Potential: Our Products Enhance Learning, Streamline Tasks, and Empower Success in Every Endeavor. Experience the Difference Today!"</p>
+        </div>
+      </div> <!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service horizontal d-flex">
+            <div class="service-icon color-1 mb-4">
+              <svg class="bi bi-app-indicator" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>Learn On Demand</h3>
+              <p>Learn at your own pace, from anywhere in the world.</p>  
+              <p><a href="#" class="read-more">Learn More</a></p>
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div>
+        
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service horizontal d-flex">
+            <div class="service-icon color-2 mb-4">
+              <svg class="bi bi-arrow-repeat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"/>
+                <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>Expert Guidance</h3>
+              <p>Learn everything from the best in the industry experts.</p>  
+              <p><a href="#" class="read-more">Learn More</a></p>
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div>
+        
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service horizontal d-flex">
+            <div class="service-icon color-3 mb-4">
+              <svg class="bi bi-briefcase" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"/>
+                <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>Project Based Learning</h3>
+              <p>Learn everything from scratch by building super-cool projects.</p>  
+              <p><a href="#" class="read-more">Learn More</a></p>
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div>
+        
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="service horizontal d-flex">
+            <div class="service-icon color-4 mb-4">
+              <svg class="bi bi-collection" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>Assignments</h3>
+              <p>Solve a lot of assignments, and yourself a better developer.</p>  
+              <p><a href="#" class="read-more">Learn More</a></p>
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div>
+      </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section -->
+
+
+ 
+
+
+
+  <div class="untree_co-section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 mb-5" data-aos="fade-up">
+          <span class="caption">Features</span>
+          <h2 class="heading">More Features</h2>
+        </div>
+
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="service">
+            <div class="service-icon color-1 mb-4">
+              <svg class="bi bi-app-indicator" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>Online teaching and daily tasks </h3>
+              <p>Online teaching enables learning from anywhere with flexible timings. Daily tasks reinforce concepts, providing valuable feedback. Learners benefit from a dynamic, accessible learning environment, managing studies alongside other commitments.
+                .</p>  
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div> <!-- /.col-lg-3 -->
+
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="service">
+            <div class="service-icon color-2 mb-4">
+              <svg class="bi bi-arrow-repeat" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"/>
+                <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>One to one sessions</h3>
+              <p>One-to-one sessions provide personalized guidance, fostering a supportive environment to overcome fears and enhance skills. This tailored approach allows for focused attention, addressing individual needs effectively. Through clear explanations and targeted exercises, learners gain confidence and strengthen their abilities, ensuring meaningful progress towards their goals.</p>  
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div> <!-- /.col-lg-3 -->
+
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="service">
+            <div class="service-icon color-3 mb-4">
+              <svg class="bi bi-briefcase" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"/>
+                <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>100+ popular Interview Questions</h3>
+              <p>"100+ Popular Interview Questions" offers comprehensive preparation for job interviews by addressing commonly asked questions and providing strategies to crack them. Through mock interviews, candidates can overcome anxiety and gain confidence. This resource equips individuals with the skills needed to excel in interviews and secure their desired positions.
+              </p>  
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div> <!-- /.col-lg-3 -->
+
+        <div class="col-md-6 mb-4 mb-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="service">
+            <div class="service-icon color-4 mb-4">
+              <svg class="bi bi-collection" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"/>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>Real time projects </h3>
+              <p>
+                "Real-time Projects" offers practical experience in live classes, focusing on real-world scenarios. By working on these projects, students gain valuable skills applicable to industry settings. These projects not only enhance learning but also serve as impressive additions to resumes, ultimately increasing chances of success in job interviews.</p>  
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div> <!-- /.col-lg-3 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section -->
+
+  <div class="untree_co-section bg-light" id="pricing-section">
+    <div class="container">
+
+      <div class="row pricing-title">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+          <span class="caption">Plans</span>
+          <h2 class="heading">Pricing</h2>
+          <p>Pricing for everyone. Choose your plan now!</p>
+        </div>
+      </div> <!-- /.row -->
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing">
+                <div class="body">
+                  <div class="price">
+                    <span class="price">Rs<span> 1999/-</span></span>
+                    <span class="d-block plan mb-4">Front-End Design</span>
+                  </div>
+                  <ul class="list-unstyled ul-check primary mb-5">
+                    <li>Comprehensive curriculum covering HTML, CSS, and JavaScript
+                    </li>
+                    <li>Practical hands-on projects to reinforce learning
+                    </li>
+                    <li>Instructor-led sessions for personalized guidance
+                    </li>
+                    <li>Affordable pricing
+                    </li>
+                  </ul>
+                  <p class="text-center mb-0"><a href="#" class="btn btn-outline-primary">View deatils</a></p>
+                </div>
+              </div> <!-- /.pricing -->
+            </div> <!-- /.col-lg-4 -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="pricing active">
+                <div class="body">
+                  <div class="price">
+                    <span class="price">Rs<span> 4999/-</span></span>
+                    <span class="d-block plan mb-4">Full-Stack Development</span>
+                  </div>
+                  <ul class="list-unstyled ul-check primary mb-5">
+                    <li>Complete coverage of MERN stack: MongoDB, Express.js, React.js, Node.js
+                    </li>
+                    <li>In-depth understanding from scratch
+                    </li>
+                    <li>Emphasis on latest technology trends and industry best practices
+                    </li>
+                    <li>Live projects for practical application of concepts
+                    </li>
+                    <li>Instructor-led sessions for interactive learning
+                    </li>
+                    <li>Affordable pricing</li>
+                  </ul>
+                  <p class="text-center mb-0"><a href="#" class="btn btn-primary">View deatils</a></p>
+                </div>
+              </div> <!-- /.pricing -->
+              
+            </div> <!-- /.col-lg-4 -->
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="pricing">
+
+                <div class="body">
+                  <div class="price">
+                    <span class="price">Rs<span> 2999/-</span></span>
+                    <span class="d-block plan mb-4">Back-End Development</span>
+                  </div>
+                  <ul class="list-unstyled ul-check primary mb-5">
+                    <li>Thorough coverage of Back-End Development using Node.js and Express.js</li>
+                    <li>Hands-on learning from scratch to advanced concepts
+
+                    </li>
+                    <li>Practical projects to reinforce learning
+                    </li>
+                    <li>Affordable pricing</li>
+
+                  </ul>
+                  <p class="text-center mb-0"><a href="#" class="btn btn-outline-primary">View deatils</a></p>
+                </div>
+              </div> <!-- /.pricing -->
+            </div> <!-- /.col-lg-4 -->
+          </div> <!-- /.row -->
+        </div> <!-- /.col-lg-8 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section -->
+
+  <!-- <div class="untree_co-section" id="testimonials-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center">
+          <span class="caption">Testimonials</span>
+          <h2 class="heading">What Our Client Says..</h2>
+
+          <div>
+            <a href="#" class="js-custom-prev-v2 cusotm-slider-nav custom-prev"><span><svg class="bi bi-arrow-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+              <path fill-rule="evenodd" d="M2.5 8a.5.5 0 0 1 .5-.5h10.5a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span></a>
+            <a href="#" class="js-custom-next-v2 cusotm-slider-nav custom-next"><span>
+              <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
+              </svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-12" data-aos="fade" data-aos-delay="200">
+          <div class="owl-2-slider owl-carousel">
+            <div class="item">
+              <div class="untree_co-testimonial d-flex">
+
+                <div class="text">
+                  <blockquote>
+                    &ldquo;Separated they <span class="highlight">live in Bookmarksgrove right at the coast of the Semantics</span>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. &rdquo;
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="pic mr-3">
+                      <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div>
+                      <strong class="d-block">Cameron Fisher</strong><span class="d-block">Facebook, Product Lead</span> 
+                    </div>
+
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <div class="item">
+              <div class="untree_co-testimonial d-flex">
+
+                <div class="text">
+                  <blockquote>
+                    &ldquo;Separated they <span class="highlight">live in Bookmarksgrove right at the coast of the Semantics</span>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. &rdquo;
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="pic mr-3">
+                      <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div>
+                      <strong class="d-block">Jenny Wilson</strong><span class="d-block">Facebook, Product Lead</span> 
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="untree_co-testimonial d-flex">
+
+                <div class="text">
+                  <blockquote>
+                    &ldquo;Separated they <span class="highlight">live in Bookmarksgrove right at the coast of the Semantics</span>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. &rdquo;
+                  </blockquote>
+                  <div class="author d-flex">
+                    <div class="pic mr-3">
+                      <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+                    </div>
+                    <div>
+                      <strong class="d-block">James Anderson</strong><span class="d-block">Facebook, Product Lead</span> 
+                    </div>
+
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div> 
+  </div>  -->
+  <!-- /.untree_co-section -->
+
+  <div class="untree_co-section" id="about-section">
+    <div class="container">
+      <div class="row justify-content-between mb-5">
+        <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <img src="images/undraw_getting_coffee_re_f2do.svg" alt="Image" class="img-fluid">
+        </div> <!-- /.col-lg-6 -->
+        <div class="col-lg-4">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="0">
+            <span class="caption">About</span>
+            <h2 class="heading">The Company</h2>
+          </div>
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+            <p>We, as <span class="highlight">software engineers,</span>are dedicated to imparting cutting-edge skills and <span class="highlight">expertise in web development </span>to individuals. Our goal is to  <span class="highlight">educate and empower</span> our students with the latest techniques and knowledge in web development, ensuring they become proficient in these skills. Through exceptional training and career support, we strive to guide our students towards success in the dynamic field of web development.</p>
+          </div>
+
+          <ul class="list-unstyled ul-check primary mb-4" data-aos="fade-up" data-aos-delay="200">
+            <li>Online teaching and daily tasks </li>
+       
+            <li>Real-world Industy Examples</li>
+            <li>Learn from anywhere in the world</li>
+            <li>100+ popular Interview Questions</li>
+            <li>Real time projects </li>
+            <li>Placement Assurance</li>
+            <li>One to one sessions</li>
+            <li>Mock interviews</li>
+          </ul>
+
+
+          <div class="row count-numbers">
+            <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="0">
+              <span class="counter d-block"><span data-number="24">0</span><span>M</span></span>
+              <span class="caption-2">Members</span>
+            </div>
+            <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <span class="counter d-block"><span data-number="121">0</span><span></span></span>
+              <span class="caption-2">Team</span>
+            </div>
+          </div>
+        </div> <!-- /.col-lg-6 -->
+      </div> <!-- /.row -->
+
+      <div class="row pt-5">
+        <div class="col-12 mb-5" data-aos="fade-up">
+          <span class="caption">Team</span>
+          <h2 class="heading">The Team</h2>
+        </div>
+        <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="100">
+          <img src="images/person_1.jpg" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          <h3 class="h5 font-weight-bold">Veeramalla Abhinay</h3>
+          <p>Abhinay <span class="highlight">founder of Abhindhu.com,  Abhinay has over 3+ years of extensive experience in the software industry,</span> Abhinay brings unparalleled expertise in full-stack development across various tech stacks. Passionate about teaching and mentoring, Abhinay is committed to empowering students by helping them learn and master the latest web technology skills, ensuring their transformation into proficient developers. </p>  
+        </div>
+        <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delayt="200">
+          <img src="images/person_2.jpg" alt="Image" class="img-fluid mb-3 w-50 rounded-circle">
+          <h3 class="h5 font-weight-bold">Gudheti Sindhu</h3>
+          <p>Gudheti Sindhu, <span class="highlight">the co-founder of Abhindhu.com. With a rich background in the software industry spanning one year,</span> Sindhu brings invaluable expertise in the edutech domain as a software engineer. Through her passion for teaching and mentorship, Sindhu has dedicated herself to transforming students' learning experiences and guiding them to success. Eager to share her proficiency in the latest full-stack skills, Sindhu is enthusiastic about empowering individuals to excel in their development journeys.</p>  
+        </div>
+   
+      </div>
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section -->
+
+ 
+
+  <div class="untree_co-section" id="contact-section">
+    <div class="container">
+      <div class="row mb-5"  data-aos="fade-up" data-aos-delay="0">
+        <div class="col-12 text-center">
+          <span class="caption">Contact</span>
+          <h2 class="heading">Get In Touch</h2>
+          <p>Feel free to ask any question</p>
+        </div>
+      </div> <!-- /.row -->
+      <div class="row">
+
+        <div class="col-lg-7">
+
+
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="" for="fname">First name</label>
+                  <input type="text" class="form-control" id="fname">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="" for="lname">Last name</label>
+                  <input type="text" class="form-control" id="lname">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="" for="email">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+              <label class="" for="message">Message</label>
+              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div> <!-- /.col-lg-7 -->
+        <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
+          <div class="quick-contact">
+            <h3 class="h5 mb-4">Contact Info</h3>
+            <!-- <address class="text-black d-flex"><span class="mt-1 icon-room mr-2"></span><span>43 Raymouth Rd. Baltemoer, London 3910</span></address> -->
+            <ul class="list-unstyled ul-links mb-4">
+              <li><a href="tel://7095529538" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>7095529538</span></a></li>
+
+              <li><a href="tel://9951425718" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>9951425715</span></a></li>
+
+              <li><a href="mailto:abhindhu2412@gmail.com" class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span>abhindhu2412@gmail.com</span></a></li>
+
+              <li><a href="https://abhindhu.com/" target="_blank" class="d-flex"><span class="mt-1 icon-globe mr-2"></span><span>https://abhindhu.com/</span></a></li>
+            </ul>
+          </div>
+        </div> <!-- /.col-lg-4 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section bg-light -->
+  
+
+  <div class="site-footer">
+
+    <div class="footer-dots"></div> <!-- /.footer-dots -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>About Launch<span class="text-primary">.</span> </h3>
+            <p>We, as software engineers, are dedicated to imparting cutting-edge skills and expertise in web development to individuals. Our goal is to educate and empower our students with the latest techniques and knowledge in web development, ensuring they become proficient in these skills. Through exceptional training and career support, we strive to guide our students towards success in the dynamic field of web development.</p>
+          </div> <!-- /.widget -->
+          <div class="widget">
+            <h3>Follow Us</h3>
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <!-- <li><a href="#"><span class="icon-twitter"></span></a></li> -->
+              <!-- <li><a href="#"><span class="icon-facebook"></span></a></li> -->
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              <!-- <li><a href="#"><span class="icon-pinterest"></span></a></li> -->
+              <!-- <li><a href="#"><span class="icon-dribbble"></span></a></li> -->
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+
+        <div class="col-lg-2 ml-auto">
+          <div class="widget">
+            <h3>Projects</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+
+        <div class="col-lg-2">
+          <div class="widget">
+            <h3>Services</h3>
+            <ul class="list-unstyled float-left links">
+              <li><a href="#">Built for Developers</a></li>
+              <li><a href="#">Modern Design</a></li>
+              <li><a href="#">Building Stunning Websites</a></li>
+              <li><a href="#">Bring Ideas To Life</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+
+
+        <div class="col-lg-3">
+          <div class="widget">
+            <h3>Quick Contact</h3>
+            <!-- <address>43 Raymouth Rd. Baltemoer, London 3910</address> -->
+            <ul class="list-unstyled links mb-4">
+              <li><a href="tel://7095529538">7095529538</a></li>
+              <li><a href="tel://9951425718">9951425718</a></li>
+              <!-- <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li> -->
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+
+      </div> <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
+            Established by Abhindhu in Hyderabad, India, crafted with passion and a dash of code. ❤️</a> 
+          </p>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+  </div> <!-- /.site-footer -->
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  
+  <script src="js/custom.js"></script>
+  
+</body>
+
 </html>
