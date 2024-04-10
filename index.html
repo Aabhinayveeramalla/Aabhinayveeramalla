@@ -31,6 +31,7 @@
 
   <title>Abhindhu</title>
   <style>
+    
         html,
 body {
   margin: 0;
@@ -55,6 +56,10 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+.cursor.blink {
+  animation: blink 0.8s ease-in-out infinite;
+}
+
   </style>
     <script>
       window.onload = function() {
@@ -62,6 +67,7 @@ body {
       selector: '.background'
     });
   };
+  
     </script>
 </head>
 
@@ -131,9 +137,11 @@ body {
           <div class="dots"></div>
           <div class="row justify-content-center">
             <div class="col-md-7 text-center mb-5">
-              <h1 class="heading" data-aos="fade-up" data-aos-delay="0">
+              <h1 class="text-2xl md:!text-4xl leading-9 md:!leading-[44px]  font-bold flex flex-col justify-center lg:!justify-start flex-wrap text-gray-900 lg:!self-start w-full">Learning with Abhindhu made &nbsp;<div class="flex lg:!inline-flex text-primary-500 flex-wrap break-all justify-center lg:!justify-start"><div class="Typewriter" data-testid="typewriter-wrapper"><span class="Typewriter__wrapper"></span>       <p> <span class="typed-text caption " style="font-size: 20px;"></span><span class="cursor blink ">&nbsp;</span></p></div></div></h1>
+       
+              <!-- <h1 class="heading" data-aos="fade-up" data-aos-delay="0">
               An E-platform to tranform your Carrier With Software skills
-              </h1>
+              </h1> -->
             </div>
             
           </div>
@@ -727,6 +735,47 @@ body {
   <script src="js/aos.js"></script>
   
   <script src="js/custom.js"></script>
+  <script>
+    const typedText = document.querySelector(".typed-text");
+const cursor = document.querySelector(".cursor");
+
+const textArray = ["Intuitive", "Practical", "Affordable"];
+
+let textArrayIndex = 0;
+let charIndex = 0;
+
+const erase = () => {
+  if (charIndex > 0) {
+    cursor.classList.remove('blink');
+    typedText.textContent = textArray[textArrayIndex].slice(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, 80);
+  } else {
+    cursor.classList.add('blink');
+    textArrayIndex++;
+    if (textArrayIndex > textArray.length - 1) {
+      textArrayIndex = 0;
+    }
+    setTimeout(type, 1000);
+  }
+}
+
+const type = () => {
+  if (charIndex <= textArray[textArrayIndex].length - 1) {
+    cursor.classList.remove('blink');
+    typedText.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, 120);
+  } else {
+    cursor.classList.add('blink');
+    setTimeout(erase, 1000);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  type();
+})
+  </script>
   
 </body>
 
