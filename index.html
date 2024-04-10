@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="favicon.png">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
@@ -30,6 +30,32 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Abhindhu</title>
+  <style>
+        html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.background{
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-animation: appear 1.4s 1;
+  animation: appear 1.4s 1;
+    animation-fill-mode: none;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
@@ -93,7 +119,7 @@
   <div class="untree_co-hero pb-0" id="home-section">
     <div class="container">
       <div class="row">
-
+        <canvas class="background"></canvas>
         <div class="col-12">
           <div class="dots"></div>
           <div class="row justify-content-center">
